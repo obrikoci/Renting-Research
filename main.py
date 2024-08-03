@@ -5,8 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 
-FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfiyRGd82SxeTP7HKKDexOhOYnII-MkeemjDrteaWIYwMTCDA/viewform?usp=sf_link"
-ZILLOW_URL = "https://appbrewery.github.io/Zillow-Clone/"
+FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfiyRGd82SxeTP7HKKDexOhOYnII-MkeemjDrteaWIYwMTCDA/viewform?usp=sf_link" # After looking at this form you can create your own and fix it however you want, because you will need to get hold of the responses
+ZILLOW_URL = "https://appbrewery.github.io/Zillow-Clone/" # Took a clone website so that the code will work even if Zillow gets updated
 
 # -------------------------------------GETTING HOLD OF ADDRESS, PRICE AND LINK------------------------------------------
 
@@ -69,5 +69,3 @@ for n in range(len(links)):
 # After going to Google Forms manually (bcs we need to be signed in for this part) and clicking "Link To Sheets"
 sheets_link = "https://docs.google.com/spreadsheets/d/1rLgwP2Bw18u7RfYH5dVNOdGjtW9o2gMllANd3yg96BA/edit?resourcekey=&gid=2111879424#gid=2111879424"
 print(f"Link to the Sheets with all the details added: \n{sheets_link}")
-
-
